@@ -29,6 +29,22 @@ namespace AddressBook
             details.MobileNumber = Convert.ToInt64(Console.ReadLine());
             Console.WriteLine("Enter the email");
             details.Email= Console.ReadLine();
+            contact.Add(details);
+        }
+        public void Display() //UC2
+        {
+            foreach(ContactDetails data in contact)
+            {
+                Console.WriteLine("Details of the person in addressbook");
+                Console.WriteLine("FirstName:"+data.FirstName);
+                Console.WriteLine("LastName:"+data.LastName);
+                Console.WriteLine("Address:" + data.Address);
+                Console.WriteLine("City:" + data.City);
+                Console.WriteLine("State:" + data.State);
+                Console.WriteLine("ZipCode:" + data.ZipCode);
+                Console.WriteLine("MobileNumber:" + data.MobileNumber);
+                Console.WriteLine("Email:" + data.Email);
+            }
         }
     }
 }

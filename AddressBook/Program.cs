@@ -11,15 +11,17 @@ namespace AddressBook
             while(true)
             {
                 Console.WriteLine("Choose the option from below");
-                Console.WriteLine("1.CreateContact");
+                Console.WriteLine("1.Create Contact\n2.Display Contact");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
                 {
                     case 1:
-                        addressBook.Details();
+                        addressBook.Details(); //UC1_CreateContact
                         break;
-                }
-                break;
+                    case 2:
+                        addressBook.Display(); //AddNewContact
+                        break;
+                }   
             }
         }
     }
