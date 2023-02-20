@@ -95,5 +95,22 @@ namespace AddressBook
                 }
             }
         }
+        public void Delete()
+        {
+            Console.WriteLine("Enter the name to delete contact");
+            string Fname = Console.ReadLine();
+            foreach(var Data1 in contact)
+            {
+                if(Data1.FirstName == Fname)
+                {
+                    contact.Remove(Data1);
+                    Console.WriteLine("Contact Successfully removed");
+                }
+                else
+                {
+                    Console.WriteLine("Contact not present");
+                }
+            }
+        }
     }
 }
