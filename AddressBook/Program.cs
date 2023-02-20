@@ -11,7 +11,7 @@ namespace AddressBook
             while(true)
             {
                 Console.WriteLine("Choose the option from below");
-                Console.WriteLine("1.Create Contact\n2.Display Contact");
+                Console.WriteLine("1.Create Contact\n2.Display Contact\n3.Edit Contact");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
                 {
@@ -20,6 +20,9 @@ namespace AddressBook
                         break;
                     case 2:
                         addressBook.Display(); //AddNewContact
+                        break;
+                    case 3:
+                        addressBook.EditContact(); //EditExistingContact
                         break;
                 }   
             }
