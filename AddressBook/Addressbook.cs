@@ -33,7 +33,7 @@ namespace AddressBook
         }
         public void Display() //UC2
         {
-            foreach(ContactDetails data in contact)
+            foreach(ContactDetails data in contact) //foreach loop to display fields
             {
                 Console.WriteLine("Details of the person in addressbook");
                 Console.WriteLine("FirstName:"+data.FirstName);
