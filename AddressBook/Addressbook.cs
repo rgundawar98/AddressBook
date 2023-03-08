@@ -130,5 +130,22 @@ namespace AddressBook
                 i++;
             }
         }
+        public void NoDuplicateEntry()
+        {
+            List<ContactDetails> contact = new List<ContactDetails>();
+            Console.WriteLine("Enetr the name to check");
+            string first_Name = Console.ReadLine();
+            foreach(var Data1 in contact)
+            {
+                if(Data1.FirstName.Equals(first_Name))
+                {
+                    Console.WriteLine("Contact already present");
+                }
+                else
+                {
+                    Details();
+                }
+            }
+        }
     }
 }
